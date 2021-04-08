@@ -1,0 +1,24 @@
+.shop-menu{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.shop-menu button{
+    background-color: unset;
+    border: unset;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+mat-icon.mat-icon.notranslate.fa.fa-heart.mat-icon-no-color,mat-icon.mat-icon.notranslate.fa.fa-shopping-cart.mat-icon-no-color {
+    font-size: 1.5em;
+    color: #000;
+}
+
+number{
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+}

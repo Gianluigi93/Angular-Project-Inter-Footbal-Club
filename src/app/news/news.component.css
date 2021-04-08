@@ -1,0 +1,30 @@
+.example-card {
+    max-width: 400px;
+  }
+
+.example-card h3{
+    font-size: 24px !important;
+}
+
+mat-card-actions{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start
+}
+
+mat-card.example-card{
+    width: 20%;
+    margin: 0 10px;
+}
+
+mat-card-actions.mat-card-actions {
+    padding-right: 20px;
+}
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: 0!important;
+}

@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import '~font-awesome/css/font-awesome.css';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Lato', sans-serif; background: blue }
+
+/* icon */
+.mat-icon {
+    color: #fff;    
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.secondary-menu li {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* structure */
+.container-page{
+    width: 1280px;
+    margin: 0 auto;
+    display: block;
+}
+
+.container-content{
+    background-color: #fff;
+    width: 1680px;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 
+}
+
+/* typography */
+h2{
+    font-size: 32px!important;
+    color: #000
+}
+.blocks__title:after {
+    display: block;
+    height: 1px;
+    width: 54px;
+    margin-left: 5spx;
+    margin-top: 5px;
+    background-color: #221f20;
+    content: '';
+}
+.blocks__title:after {
+    margin-left: 0;
+}
+
+/* container content pages */
+.container-table{
+    width: 70%;
+    margin: 0 auto;
+    display: block
+}
+

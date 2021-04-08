@@ -1,0 +1,110 @@
+
+<div *ngIf="testoReipilogo == 'Riepilogo'">
+    <h2>Ordine: {{testoReipilogo}}</h2>
+</div>
+
+<app-child [productCount]="product" (riepilogo)="riepilogaOrdine($event)"></app-child>
+
+
+<div class="container-table">
+    <div class="flex">
+        <mat-card class="example-card">
+            <img mat-card-image src="https://www.inter.it/binaries/content/gallery/internazionale/photos/foto-utili/inter.it-2020_10_6_11_08_45-329409.jpg/inter.it-2020_10_6_11_08_45-329409.jpg/internazionale%3Aspalla" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            <h3 *ngFor="let pippo of card1">
+                {{pippo.prodotto}}
+                <span>{{pippo.tipo}}</span>
+                <span class="price">{{pippo.prezzo}}</span>
+            </h3>
+            </mat-card-content>
+            <mat-card-actions>
+                <button>        
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-heart"></mat-icon>
+                </button>
+                <button (click)="inviaAlClick()">
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-shopping-cart"></mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="example-card">
+            <img mat-card-image src="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/04/03/2021-04-03-19-04-02_356991.JPG/2021-04-03-19-04-02_356991.JPG/internazionale%3Aspalla" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            <h3 *ngFor="let pippo of card2">
+                {{pippo.prodotto}}
+                <span>{{pippo.tipo}}</span>
+                <span class="price">{{pippo.prezzo}}</span>
+            </h3>
+            </mat-card-content>
+            <mat-card-actions>
+                <button>        
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-heart"></mat-icon>
+                </button>
+                <button (click)="inviaAlClick()">
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-shopping-cart"></mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="example-card">
+            <img mat-card-image src="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/04/03/2021-04-03-19-04-02_356991.JPG/2021-04-03-19-04-02_356991.JPG/internazionale%3Aspalla" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            <h3 *ngFor="let pippo of card3">
+                {{pippo.prodotto}}
+                <span>{{pippo.tipo}}</span>
+                <span class="price">{{pippo.prezzo}}</span>
+            </h3>
+            </mat-card-content>
+            <mat-card-actions>
+                <button>        
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-heart"></mat-icon>
+                </button>
+                <button (click)="inviaAlClick()">
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-shopping-cart"></mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="example-card">
+            <img mat-card-image src="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/04/03/2021-04-03-19-04-02_356991.JPG/2021-04-03-19-04-02_356991.JPG/internazionale%3Aspalla" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            <h3 *ngFor="let pippo of card4">
+                {{pippo.prodotto}}
+                <span>{{pippo.tipo}}</span>
+                <span class="price">{{pippo.prezzo}}</span>
+            </h3>
+            </mat-card-content>
+            <mat-card-actions>
+                <button>        
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-heart"></mat-icon>
+                </button>
+                <button (click)="inviaAlClick()">
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-shopping-cart"></mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="example-card">
+            <img mat-card-image src="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/04/03/2021-04-03-19-04-02_356991.JPG/2021-04-03-19-04-02_356991.JPG/internazionale%3Aspalla" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            <h3 *ngFor="let pippo of card5">
+                {{pippo.prodotto}}
+                <span>{{pippo.tipo}}</span>
+                <span class="price">{{pippo.prezzo}}</span>
+            </h3>
+            </mat-card-content>
+            <mat-card-actions>
+                <button>        
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-heart"></mat-icon>
+                </button>
+                <button (click)="inviaAlClick()">
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-shopping-cart"></mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+
+    </div> 
+</div>
+
+
+  

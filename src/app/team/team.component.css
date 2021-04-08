@@ -1,0 +1,18 @@
+
+table {
+  width: 100%;
+}
+
+img {
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+}
+
+td.mat-cell.cdk-cell.cdk-column-imageUrl.mat-column-imageUrl{
+  width: 30%;
+}
+
+th.mat-header-cell.cdk-header-cell.cdk-column-imageUrl.mat-column-imageUrl {
+  text-align: center;
+}

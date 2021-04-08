@@ -1,0 +1,132 @@
+<div class="container-login">
+    <h2>Registrati</h2>
+    <form [formGroup]="registrationForm" (ngSubmit)="onFormSubmit()">
+        <div class="flex">
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Inserisic il tuo nome</mat-label>
+                        <input type="text" matInput formControlName="firstName">
+                            <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+                    <mat-hint>Nome</mat-hint>
+                </mat-form-field>
+                <span *ngIf="firstName.invalid && (firstName?.dirty || firstName?.touched)">
+                    <p class="error">Il campo è vuoto!</p>
+                </span>
+            </p>
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Inserisic il tuo cognome</mat-label>
+                        <input matInput formControlName="surname">
+                            <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+                        <mat-hint>Cognome</mat-hint>
+                </mat-form-field>
+                <span *ngIf="surname?.invalid && (surname?.dirty || surname.touched)">
+                    <p class="error">Il campo è vuoto!</p>
+                </span>
+            </p>
+        </div>
+        <div class="flex">
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Il tuo numero di telefono</mat-label>
+                        <input type="number" matInput formControlName="phone">
+                            <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+                            <mat-hint>Telefono</mat-hint>
+                </mat-form-field>
+                <span *ngIf="phone?.invalid && (phone.touched)">
+                    <p class="error">Il numero non è corretto!</p>
+                </span>
+            </p>
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>La tua email</mat-label>
+                        <input matInput formControlName="email">
+                            <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+                            <mat-hint>Email</mat-hint>
+                            <span *ngIf="surname?.invalid && (surname?.dirty)">
+                                <p class="error">Il campo è vuoto!</p>
+                            </span>
+                </mat-form-field>
+                <span *ngIf="email?.invalid && (email?.dirty || email.touched)">
+                    <p class="error">L'email non è corretto!</p>
+                </span>
+            </p>
+        </div>
+        <div class="flex">
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Nazione</mat-label>
+                        <input matInput formControlName="country">
+                            <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+                            <mat-hint>Nazione</mat-hint>
+                </mat-form-field>
+                <span *ngIf="country?.invalid && (country?.dirty || country.touched)">
+                    <p class="error">La nazione non è corretta!</p>
+                </span>
+            </p>
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Città</mat-label>
+                        <input matInput formControlName="city">
+                            <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+                            <mat-hint>Città</mat-hint>
+                </mat-form-field>
+                <span *ngIf="city?.invalid && (city?.dirty || city.touched)">
+                    <p class="error">La città non è corretta!</p>
+                </span>
+            </p>
+        </div>
+        <div class="flex">
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>La tua username</mat-label>
+                        <input matInput formControlName="username">
+                            <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+                            <mat-hint>Username</mat-hint>
+                </mat-form-field>
+                <span *ngIf="username?.invalid && (username?.dirty || username.touched)">
+                    <p class="error">La user non è corretta!</p>
+                </span>
+            </p>
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>La tua password</mat-label>
+                        <input matInput formControlName="password">
+                            <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+                            <mat-hint>Password</mat-hint>
+                </mat-form-field>
+                <span *ngIf="password?.invalid && (password?.dirty || password.touched)">
+                    <p class="error">La password non è corretta!</p>
+                </span>
+            </p>
+        </div>
+        <div class="flex">
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Il tuo calciatore preferito</mat-label>
+                        <mat-select>
+                            <mat-option value="one">Hndanovic</mat-option>
+                            <mat-option value="two">Padelli</mat-option>
+                            <mat-option value="one">Stankovic</mat-option>
+                            <mat-option value="two">Radu</mat-option>
+                        </mat-select>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>La tua maglia preferita</mat-label>
+                        <mat-select>
+                            <mat-option value="one">Prima</mat-option>
+                            <mat-option value="two">Seconda</mat-option>
+                            <mat-option value="one">Terza</mat-option>
+                        </mat-select>
+                </mat-form-field>
+            </p>
+        </div>
+        <button type="submit">Registrati</button>
+    </form>
+
+    <app-thanks-page></app-thanks-page>
+    
+
+</div>

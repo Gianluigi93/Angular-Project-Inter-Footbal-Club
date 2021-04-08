@@ -1,0 +1,38 @@
+mat-card-actions.mat-card-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+mat-card-actions.mat-card-actions button{
+    background-color: unset;
+    border: unset;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+mat-icon.mat-icon.notranslate.fa.fa-heart.mat-icon-no-color,mat-icon.mat-icon.notranslate.fa.fa-shopping-cart.mat-icon-no-color {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0
+}
+
+.example-card{
+    margin: 0 10px;
+}
+
+h3{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+span.price{
+    font-size: 2em;
+    justify-content: flex-end;
+    display: flex;
+}

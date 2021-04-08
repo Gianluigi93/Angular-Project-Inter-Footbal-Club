@@ -1,0 +1,31 @@
+<div class="container-content">
+    <div class="container-page">
+        <h2 class="blocks__title">
+            <span>News</span>
+        </h2>
+    </div>
+    <div class="flex">
+        <mat-card class="example-card">
+            <img mat-card-image src="https://www.inter.it/binaries/content/gallery/internazionale/photos/foto-utili/inter.it-2020_10_6_11_08_45-329409.jpg/inter.it-2020_10_6_11_08_45-329409.jpg/internazionale%3Aspalla" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            <h3 *ngFor="let pippo of card">
+                {{pippo.titolo}}
+            </h3>
+            </mat-card-content>
+            <mat-card-actions>
+            <a href="#" *ngIf="cta == cta">{{cta}}</a>
+            </mat-card-actions>
+        </mat-card>
+        <mat-card class="example-card">
+            <img mat-card-image src="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/04/03/2021-04-03-19-04-02_356991.JPG/2021-04-03-19-04-02_356991.JPG/internazionale%3Aspalla" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            <h3 *ngFor="let pippo of card_one">
+                {{pippo.titolo}}
+            </h3>
+            </mat-card-content>
+            <mat-card-actions>
+            <a href="#" *ngIf="cta == cta">{{cta}}</a>
+            </mat-card-actions>
+        </mat-card>
+    </div>  
+</div>
